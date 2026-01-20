@@ -45,7 +45,7 @@ const TAGS_DATA = [
   },
 ];
 
-const ROLES = ["pe & vc", "founder", "tech operator", "other"] as const;
+const ROLES = ["founder", "tech operator", "pe & vc", "other"] as const;
 type Role = (typeof ROLES)[number];
 
 export default function Home() {
@@ -106,6 +106,71 @@ export default function Home() {
 
   return (
     <main className="min-h-screen flex items-center justify-center p-4 md:p-8 overflow-hidden">
+      {/* Background Padel Court Pattern */}
+      <svg
+        className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-[0.06] -z-10 rotate-[20deg]"
+        style={{ width: "140vw", height: "140vh" }}
+        viewBox="0 0 200 100"
+        preserveAspectRatio="xMidYMid meet"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        {/* Outer court boundary */}
+        <rect
+          x="2"
+          y="2"
+          width="196"
+          height="96"
+          fill="none"
+          stroke="#004526"
+          strokeWidth="1.5"
+        />
+        {/* Center line */}
+        <line
+          x1="100"
+          y1="2"
+          x2="100"
+          y2="98"
+          stroke="#004526"
+          strokeWidth="1"
+        />
+        {/* Left service line */}
+        <line
+          x1="2"
+          y1="50"
+          x2="60"
+          y2="50"
+          stroke="#004526"
+          strokeWidth="1"
+        />
+        {/* Right service line */}
+        <line
+          x1="140"
+          y1="50"
+          x2="198"
+          y2="50"
+          stroke="#004526"
+          strokeWidth="1"
+        />
+        {/* Left service box vertical */}
+        <line
+          x1="60"
+          y1="2"
+          x2="60"
+          y2="98"
+          stroke="#004526"
+          strokeWidth="1"
+        />
+        {/* Right service box vertical */}
+        <line
+          x1="140"
+          y1="2"
+          x2="140"
+          y2="98"
+          stroke="#004526"
+          strokeWidth="1"
+        />
+      </svg>
+
       <div
         className="bg-[var(--color-card)] border border-[var(--color-border)] rounded-lg overflow-hidden transition-all duration-1000 ease-in-out"
         style={{
@@ -144,7 +209,7 @@ export default function Home() {
               >
                 london. padel.
                 <br />
-                investors. founders. operators.
+                founders. investors. operators.
               </h1>
               <p
                 className="text-lg text-white/70 lowercase text-center"
