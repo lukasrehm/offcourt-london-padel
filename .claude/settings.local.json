@@ -13,7 +13,14 @@
       "Bash(powershell -Command \"Stop-Process -Id 37812 -Force\")",
       "Bash(powershell -Command:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(gh repo create:*)",
+      "Bash(gh auth refresh:*)",
+      "Bash(git push:*)",
+      "Bash(gh run list:*)",
+      "Bash(gh repo rename:*)",
+      "Bash(git remote:*)"
     ]
   }
 }
