@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-const basePath = process.env.NODE_ENV === "production" ? "/offcourt-london-padel" : "";
+const basePath = "/offcourt-london-padel";
 
 const TAGS_DATA = [
   {
