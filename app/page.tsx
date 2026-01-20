@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 
+const basePath = process.env.NODE_ENV === "production" ? "/offcourt-london-padel" : "";
+
 const TAGS_DATA = [
   {
     category: "padel",
@@ -116,7 +118,7 @@ export default function Home() {
           <div
             className="hidden lg:flex relative min-h-[500px] bg-cover bg-center bg-no-repeat flex-shrink-0"
             style={{
-              backgroundImage: "url('/padel-courts.jpg.jpg')",
+              backgroundImage: `url('${basePath}/padel-courts.jpg.jpg')`,
               width: "675px",
             }}
           >
@@ -125,7 +127,7 @@ export default function Home() {
             {/* Logo at top */}
             <div className="absolute top-16 left-0 right-0 z-10 flex justify-center">
               <img
-                src="/offcourt-logo-v1-large.png"
+                src={`${basePath}/offcourt-logo-v1-large.png`}
                 alt="offcourt"
                 className="w-56"
               />
