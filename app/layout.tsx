@@ -15,7 +15,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "offcourt",
+  title: "Offcourt | London. Padel. VC. PE. Tech.",
   description: "london. padel. every four weeks.",
 };
 
