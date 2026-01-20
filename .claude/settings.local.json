@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(timeout 5 tail:*)",
+      "Bash(taskkill:*)",
+      "Bash(npm install:*)",
+      "Bash(tasklist:*)",
+      "Bash(curl:*)",
+      "Bash(if not exist \"c:\\\\Users\\\\LukasRehm\\\\offcourt\\\\public\" mkdir \"c:\\\\Users\\\\LukasRehm\\\\offcourt\\\\public\")",
+      "Bash(node:*)",
+      "Bash(powershell -Command \"Stop-Process -Id 37812 -Force\")",
+      "Bash(powershell -Command:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
